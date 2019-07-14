@@ -1,4 +1,4 @@
-//¼ÆËãÈıÊ®¸öÈËµÄÆ½¾ù·Ö,Ê¹ÓÃÊı×éÊµÏÖ
+//è®¡ç®—ä¸‰åä¸ªäººçš„å¹³å‡åˆ†,ä½¿ç”¨æ•°ç»„å®ç°
 
 import java.util.*;
 public class Demo1{
@@ -7,12 +7,12 @@ public class Demo1{
 		double[]scores = new double[5]; 
 		double sum = 0;
 		for(int i=0;i<scores.length;i++){
-			System.out.print("ÇëÊäÈëµÚ"+(i+1)+"Î»Í¬Ñ§µÄ³É¼¨£º");
-			//ÎªÊı×éÀïµÄ30¸ö¸ñ×Ó¸³Öµ
+			System.out.print("è¯·è¾“å…¥ç¬¬"+(i+1)+"ä½åŒå­¦çš„æˆç»©ï¼š");
+			//ä¸ºæ•°ç»„é‡Œçš„æ ¼å­èµ‹å€¼
 			scores [i] = input.nextDouble();
 			sum += scores[i];
 		}
 		double avg = sum/scores.length;
-		System.out.print("°à¼¶Í¬Ñ§µÄÆ½¾ù·ÖÎª£º"+avg);
+		System.out.print("ç­çº§åŒå­¦çš„å¹³å‡åˆ†ä¸ºï¼š"+avg);
 	}
 }
