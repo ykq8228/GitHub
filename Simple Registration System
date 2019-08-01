@@ -1,0 +1,30 @@
+package common;
+
+import java.util.Scanner;
+
+public class ZhuCe {
+	public static void main(String[] args) {
+		boolean flag = true; //判断注册是否成功
+		Scanner input = new Scanner(System.in);
+		
+    System.out.println("*****欢迎进入注册系统*****");
+		
+    do{
+			System.out.print("请输入用户名：");
+			String userName = input.next();
+			System.out.print("请输入密码：");
+			String pwd1 = input.next();
+			System.out.print("请再次输入密码：");
+			String pwd2 = input.next();
+			
+      if(userName.length()>=3 && pwd1.length()>=6 && pwd2.length()>=6 && pwd1.equals(pwd2)){
+				System.out.println("注册成功，请牢记用户名和密码!");
+				break;
+			}else if(!pwd1.equals(pwd2)){
+				System.out.println("两次输入的密码不相同");
+			}else{
+				System.out.println("用户名长度不能小于3，密码长度不能小于6");
+			}
+		}while(flag);
+	}
+}
